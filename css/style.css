@@ -219,11 +219,11 @@ display: none;
 }
 .nav-link{
   display: block;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   color: var(--clr-grey-9);
   text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -231,6 +231,7 @@ display: none;
   background: var(--clr-primary-3);
   color: var(--clr-grey-6);
   padding-left: 2.25rem;
+  text-transform: uppercase;
 }
 .nav-links{
   height: 0;
@@ -239,7 +240,7 @@ display: none;
  transition: var(--transition);
 }
 .show-links{
-height: 280px;
+height: 330px;
 }
 @media screen and (min-width: 992px){
   .navbar{
@@ -273,6 +274,7 @@ height: 280px;
     background: transparent;
     padding: 0;
     color: var(--clr-primary-5);
+    text-transform: capitalize;
   }
   .nav-icons{
     display: -webkit-box;
@@ -739,4 +741,79 @@ font-family: var(--ff-primary);
   font-weight: 400;
   font-style: italic;
   color: var(--clr-white); 
+}
+
+/*
+=============== 
+Questions
+===============
+*/
+/* main {
+  display: grid;
+  place-items: center;
+} */
+
+.question {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.question-title h4 {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-10);
+}
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.question-text p {
+  margin-bottom: 0;
+}
+.question-center{
+    width: 90vw;
+  margin: 0 auto;
+ max-width: 620px;
+}
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+.underline{
+  background: var(--clr-primary-5);
+  width: 5rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: -0.4rem;
 }
