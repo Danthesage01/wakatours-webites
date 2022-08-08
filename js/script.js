@@ -35,7 +35,7 @@ scrollLinks.forEach(link => {
 let questions = document.querySelectorAll(".question")
 questions = [...questions]
 questions.forEach(question=>{
-  console.log(question);
+ 
 const button = question.querySelector(".question-btn")
 
 button.addEventListener("click", function(){
