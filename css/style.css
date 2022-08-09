@@ -240,7 +240,7 @@ display: none;
  transition: var(--transition);
 }
 .show-links{
-height: 330px;
+height: 312px;
 }
 @media screen and (min-width: 992px){
   .navbar{
@@ -352,12 +352,15 @@ About
 ================  
 */
 .about-img,
-.about-info{
+.about-info,
+.next-left,
+.next-right{
 margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 992px) {
-  .about-center{
+  .about-center,
+  .next-center{
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
@@ -365,7 +368,9 @@ margin-bottom: 2rem;
     flex-wrap: wrap;
   }
   .about-img,
-  .about-info{
+  .about-info,
+  .next-left,
+  .next-right{
     -webkit-box-flex: 0;
             flex: 0 0 calc(50% - 2rem);
     margin-bottom: 0;
@@ -396,7 +401,8 @@ margin-bottom: 2rem;
 Services
 ================  
 */
-.offers{
+.offers,
+.next{
   background: var(--clr-grey-2);
 }
 .offer{
@@ -816,4 +822,70 @@ Questions
   height: 0.25rem;
   margin: 0 auto;
   margin-top: -0.4rem;
+}
+/*
+================== 
+Next Section 
+==================
+*/
+.next-title{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.next-info h3 {
+  text-transform: uppercase;
+  color: var(--clr-grey-9);
+}
+.next-info-details {
+  text-transform: capitalize;
+  color: var(--clr-grey-8);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.next-info p {
+  color: var(--clr-grey-6);
+}
+.date {
+  color: var(--clr-grey-5);
+  font-size: 0.85rem;
+}
+@media screen and (min-width: 992px) {
+  .next-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .next-img {
+    margin-bottom: 0;
+  }
+}
+.next-info p {
+  margin: 1rem 0;
+}
+.deadline {
+  display: flex;
+}
+.deadline-format {
+  background: var(--clr-grey-10);
+  color: var(--clr-white);
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: var(--spacing);
 }
